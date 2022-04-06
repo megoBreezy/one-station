@@ -1357,7 +1357,7 @@ body {
 
 .news-list {
   list-style: none;
-  margin: 0 0 22px 0;
+  margin: 0 -15px 22px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1365,15 +1365,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .news-list__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 570px;
-          flex: 0 1 570px;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 0 15px;
   margin-bottom: 30px;
-}
-.news-list__item:nth-child(odd) {
-  margin-right: 20px;
 }
 
 .tile-news {
