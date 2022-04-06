@@ -1,0 +1,128 @@
+.welcome{
+  width: 100%;
+  min-height: 460px;
+  height: 100vh;
+  position: relative;
+  background-position-x: right;
+
+  &__img-w{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__img-w::before{
+    z-index: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #052555 0%, rgba(0, 67, 164, 0.8) 100%);
+    opacity: 0.8;
+  }
+  &__img{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+  &__cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 120px 15px 30px;
+    position: relative;
+    z-index: 100;
+    height: 100%;
+  }
+
+
+  &__sub-titel {
+    margin-bottom: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+  }
+
+  &__titel {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 56px 0;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 82px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+
+  }
+
+}
+
+.welcome-list {
+  margin: 0 0 44px 0;
+  padding: 10.5px 0;
+  list-style: none;
+  display: none;
+
+
+  &__item {
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+  }
+  &__item::before{
+    position: absolute;
+    content: "";
+    bottom: 7px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-bottom: 9px solid #75C5F2;
+    border-left: 9px solid transparent;
+    border-right: 0 solid transparent;
+  }
+
+}
+
+@media(max-width: 788px){
+  .welcome{
+    &__sub-titel {
+      display: none;
+    }
+    &__titel {
+      margin-bottom: 27px;
+      font-size: 63px;
+      line-height: 54px;
+    }
+  }
+  .welcome-list {
+    display: block;
+  }
+}
+
+@media(max-width: 588px){
+  .welcome{
+    &__titel {
+      font-size: 48px;
+    }
+  } 
+
+}
