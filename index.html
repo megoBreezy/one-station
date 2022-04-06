@@ -13,137 +13,139 @@
   <body>
     <div id="overlay"></div>
     <main id="main">
-      <header class="header">
-        <div class="main-container">
-          <div class="header__inner">
-            <div class="side-bar">
-              <div class="menu side-bar__menu">
-                <div class="menu__logo"><a class="logo" href="#"><img class="logo__img" src="img/logo-dark.svg" alt=""></a></div>
-                <div class="account account--active"><a class="account__btn" href="#"> 
-                    <div class="account__tytel">Иван Иванов</div></a>
-                  <ul class="account-list">
-                    <li class="account-list__item"><a class="account-list__link" href="#">Мой профиль</a></li>
-                    <li class="account-list__item"><a class="account-list__link" href="#">Личный кабинет</a></li>
-                    <li class="account-list__item">   <a class="account-list__link" href="#">Выйти <svg class="icon icon--lg account-list__icon"><use href="img/sprite.svg#exit"></use></svg></a></li>
+      <div class="content">
+        <header class="header">
+          <div class="main-container">
+            <div class="header__inner">
+              <div class="side-bar">
+                <div class="menu side-bar__menu">
+                  <div class="menu__logo"><a class="logo" href="#"><img class="logo__img" src="img/logo-dark.svg" alt=""></a></div>
+                  <div class="account account--active"><a class="account__btn" href="#"> 
+                      <div class="account__tytel">Иван Иванов</div></a>
+                    <ul class="account-list">
+                      <li class="account-list__item"><a class="account-list__link" href="#">Мой профиль</a></li>
+                      <li class="account-list__item"><a class="account-list__link" href="#">Личный кабинет</a></li>
+                      <li class="account-list__item">   <a class="account-list__link" href="#">Выйти <svg class="icon icon--lg account-list__icon"><use href="img/sprite.svg#exit"></use></svg></a></li>
+                    </ul>
+                  </div>
+                  <ul class="side-list menu__list"> 
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#statem"></use></svg> Подать заявку</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#faq"></use></svg> FAQ</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#news"></use></svg> Новости</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#contacts"></use></svg> Контакты</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#register"></use></svg> Реестр решений</a></li>
                   </ul>
                 </div>
-                <ul class="side-list menu__list"> 
-                  <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#statem"></use></svg> Подать заявку</a></li>
-                  <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#faq"></use></svg> FAQ</a></li>
-                  <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#news"></use></svg> Новости</a></li>
-                  <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#contacts"></use></svg> Контакты</a></li>
-                  <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#register"></use></svg> Реестр решений</a></li>
+                <div class="btn-menu side-bar__btn"><span></span><span></span><span>  </span></div><span class="side-bar__txte">ОДНА СТАНЦИЯ</span>
+              </div><a class="logo header__logo" href="#"><img class="logo__img" src="img/logo-white.svg" alt=""></a>
+              <div class="header-list">
+                <div class="header-list__item"><a class="btn header-list__link" href="#">Реестр решений</a><a class="btn btn-primary btn-sm" href="#">Войти</a></div>
+                <ul class="header-list__item lang">
+                  <li class="lang__item"><a class="lang__link" href="#">中文</a></li>
+                  <li class="lang__item"><a class="lang__link" href="#">RU</a></li>
+                  <li class="lang__item">   <a class="lang__link" href="#">EN</a></li>
+                  <li class="lang__item"><a class="lang__link" href="#">DE</a></li>
                 </ul>
               </div>
-              <div class="btn-menu side-bar__btn"><span></span><span></span><span>  </span></div><span class="side-bar__txte">ОДНА СТАНЦИЯ</span>
-            </div><a class="logo header__logo" href="#"><img class="logo__img" src="img/logo-white.svg" alt=""></a>
-            <div class="header-list">
-              <div class="header-list__item"><a class="btn header-list__link" href="#">Реестр решений</a><a class="btn btn-primary btn-sm" href="#">Войти</a></div>
-              <ul class="header-list__item lang">
-                <li class="lang__item"><a class="lang__link" href="#">中文</a></li>
-                <li class="lang__item"><a class="lang__link" href="#">RU</a></li>
-                <li class="lang__item">   <a class="lang__link" href="#">EN</a></li>
-                <li class="lang__item"><a class="lang__link" href="#">DE</a></li>
-              </ul>
             </div>
           </div>
+        </header>
+        <div class="welcome">
+          <div class="welcome__img-w"><img class="welcome__img" src="img/welcome.jpg" alt=""></div>
+          <div class="welcome__cont">
+            <div class="welcome__sub-titel" data-aos="fade-down" data-aos-delay="400">СИСТЕМА КОМПЛЕКСНОГО ОБСЛУЖИВАНИЯ</div>
+            <h1 class="welcome__titel" data-aos="fade-up">ОДНА СТАНЦИЯ</h1>
+            <ul class="welcome-list">
+              <li class="welcome-list__item">Безопасность</li>
+              <li class="welcome-list__item">Скорость</li>
+              <li class="welcome-list__item">Транспарентность</li>
+              <li class="welcome-list__item">Локализация</li>
+            </ul><a class="btn btn-secondary btn-lg" href="#" data-aos="fade-up" data-aos-delay="500">Подать заявку</a>
+          </div>
         </div>
-      </header>
-      <div class="welcome">
-        <div class="welcome__img-w"><img class="welcome__img" src="img/welcome.jpg" alt=""></div>
-        <div class="welcome__cont">
-          <div class="welcome__sub-titel" data-aos="fade-down" data-aos-delay="400">СИСТЕМА КОМПЛЕКСНОГО ОБСЛУЖИВАНИЯ</div>
-          <h1 class="welcome__titel" data-aos="fade-up">ОДНА СТАНЦИЯ</h1>
-          <ul class="welcome-list">
-            <li class="welcome-list__item">Безопасность</li>
-            <li class="welcome-list__item">Скорость</li>
-            <li class="welcome-list__item">Транспарентность</li>
-            <li class="welcome-list__item">Локализация</li>
-          </ul><a class="btn btn-secondary btn-lg" href="#" data-aos="fade-up" data-aos-delay="500">Подать заявку</a>
-        </div>
-      </div>
-      <div class="block-main">
-        <div class="about">
-          <div class="main-container">
-            <div class="partner-container">
-              <div class="partner" data-aos="fade-up"><a class="partner__logo" href="#"><img src="img/great-stone.png" alt=""></a><a class="bookmark" href="#">FAQ</a></div>
-              <div class="benefits">
-                <div class="benefits__item" data-aos="fade-up" data-aos-delay="400"><svg class="icon icon--lg benefits__icon"><use href="img/sprite.svg#station"></use></svg>
-                  <div class="benefits__titel">Одна станция — </div>
-                  <p class="benefits__text">это система комплексного обслуживания ведения бизнеса в Китайско-Белорусском индустриальном парке «Великий камень».</p>
-                </div>
-                <div class="benefits__item" data-aos="fade-up" data-aos-delay="500"><svg class="icon icon--lg benefits__icon"><use href="img/sprite.svg#clock"></use></svg>
-                  <p class="benefits__text">Мы осуществляем административные и иные процедуры в максимально короткие сроки:</p>
-                  <ul class="triangle">
-                    <li>при личном обращении;</li>
-                    <li>через электронную систему onestation.by.</li>
-                  </ul>
+        <div class="block-main">
+          <div class="about">
+            <div class="main-container">
+              <div class="partner-container">
+                <div class="partner" data-aos="fade-up"><a class="partner__logo" href="#"><img src="img/great-stone.png" alt=""></a><a class="bookmark" href="#">FAQ</a></div>
+                <div class="benefits">
+                  <div class="benefits__item" data-aos="fade-up" data-aos-delay="400"><svg class="icon icon--lg benefits__icon"><use href="img/sprite.svg#station"></use></svg>
+                    <div class="benefits__titel">Одна станция — </div>
+                    <p class="benefits__text">это система комплексного обслуживания ведения бизнеса в Китайско-Белорусском индустриальном парке «Великий камень».</p>
+                  </div>
+                  <div class="benefits__item" data-aos="fade-up" data-aos-delay="500"><svg class="icon icon--lg benefits__icon"><use href="img/sprite.svg#clock"></use></svg>
+                    <p class="benefits__text">Мы осуществляем административные и иные процедуры в максимально короткие сроки:</p>
+                    <ul class="triangle">
+                      <li>при личном обращении;</li>
+                      <li>через электронную систему onestation.by.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="request">
-          <div class="main-container">
-            <div class="request-step">
-              <div class="step" data-aos="fade-up">
-                <div class="step__inner"><svg class="icon icon--arrow-step"><use href="img/sprite.svg#arrow-step"></use></svg>
-                  <div class="step__number">01</div>
-                  <h3 class="step__titel">РЕГИСТРАЦИЯ</h3>
-                  <ul class="triangle">
-                    <li>Введите все данные и подтвердите e-mail</li>
-                    <li>После проверки на ваш e-mail придет письмо о том, что аккаунт активирован</li>
-                  </ul>
+          <div class="request">
+            <div class="main-container">
+              <div class="request-step">
+                <div class="step" data-aos="fade-up">
+                  <div class="step__inner"><svg class="icon icon--arrow-step"><use href="img/sprite.svg#arrow-step"></use></svg>
+                    <div class="step__number">01</div>
+                    <h3 class="step__titel">РЕГИСТРАЦИЯ</h3>
+                    <ul class="triangle">
+                      <li>Введите все данные и подтвердите e-mail</li>
+                      <li>После проверки на ваш e-mail придет письмо о том, что аккаунт активирован</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                  <div class="step__inner"><svg class="icon icon--arrow-step"><use href="img/sprite.svg#arrow-step"></use></svg>
+                    <div class="step__number">02</div>
+                    <h3 class="step__titel">СОЗДАНИЕ ЗАЯВКИ</h3>
+                    <ul class="triangle">
+                      <li>Выберите тип процедуры </li>
+                      <li>Если ни одна не подходит, выберите "Иная" и опишите свою проблему кратко в теме и развернуто в описании</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="600">
+                  <div class="step__inner">
+                    <div class="step__number">03</div>
+                    <ul class="triangle">
+                      <li>Прикрепите сканы необходимых документов</li>
+                      <li>Нажмите "Подать заявку"</li>
+                      <li>Обновления статуса заявки можно проверить в личном кабинете; сообщения о смене статуса будут также приходить на e-mail</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="step" data-aos="fade-up" data-aos-delay="300">
-                <div class="step__inner"><svg class="icon icon--arrow-step"><use href="img/sprite.svg#arrow-step"></use></svg>
-                  <div class="step__number">02</div>
-                  <h3 class="step__titel">СОЗДАНИЕ ЗАЯВКИ</h3>
-                  <ul class="triangle">
-                    <li>Выберите тип процедуры </li>
-                    <li>Если ни одна не подходит, выберите "Иная" и опишите свою проблему кратко в теме и развернуто в описании</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="step" data-aos="fade-up" data-aos-delay="600">
-                <div class="step__inner">
-                  <div class="step__number">03</div>
-                  <ul class="triangle">
-                    <li>Прикрепите сканы необходимых документов</li>
-                    <li>Нажмите "Подать заявку"</li>
-                    <li>Обновления статуса заявки можно проверить в личном кабинете; сообщения о смене статуса будут также приходить на e-mail</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="request__btn"><a class="btn btn-primary btn-sm" href="#" data-aos="zoom-in">Подать заявку</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="news">
-        <div class="main-container"><h2 class="main-title">НОВОСТИ</h1>
-          <div class="news-header" data-aos="fade-up">
-            <div class="news-header__img"> <img src="img/news.jpg" alt=""></div>
-            <div class="news-header__inner">
-              <p class="news-header__text">New</p>
-              <h3 class="news-header__title">О регистрации валютных договоров</h3><a class="news-header__link" href="#">Подробнее</a>
+              <div class="request__btn"><a class="btn btn-primary btn-sm" href="#" data-aos="zoom-in">Подать заявку</a></div>
             </div>
           </div>
-          <ul class="news-list">
-            <li class="news-list__item" data-aos="fade-up" data-aos-delay="300">
-              <div class="tile-news">
-                <h4 class="tile-news__title">График присутствия госорганов в центре комплексного обслуживания</h4>
-                <p class="tile-news__text">График постоянного присутствия работников государственных органов и иных организаций </p><a class="tile-news__link" href="#">Подробнее</a>
+        </div>
+        <div class="news">
+          <div class="main-container"><h2 class="main-title">НОВОСТИ</h1>
+            <div class="news-header" data-aos="fade-up">
+              <div class="news-header__img"> <img src="img/news.jpg" alt=""></div>
+              <div class="news-header__inner">
+                <p class="news-header__text">New</p>
+                <h3 class="news-header__title">О регистрации валютных договоров</h3><a class="news-header__link" href="#">Подробнее</a>
               </div>
-            </li>
-            <li class="news-list__item" data-aos="fade-up" data-aos-delay="600">
-              <div class="tile-news">
-                <h4 class="tile-news__title">Об обновлении расписания по маршруту №3410-ТК «Минск-Борисов»</h4>
-                <p class="tile-news__text">График постоянного присутствия работников государственных органов и иных организаций</p><a class="tile-news__link" href="#">Подробнее </a>
-              </div>
-            </li>
-          </ul><a class="btn btn-primary btn-sm news__btn" href="#" data-aos="zoom-in">Показать еще </a>
+            </div>
+            <ul class="news-list">
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">График присутствия госорганов в центре комплексного обслуживания</h4>
+                  <p class="tile-news__text">График постоянного присутствия работников государственных органов и иных организаций </p><a class="tile-news__link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="600">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">Об обновлении расписания по маршруту №3410-ТК «Минск-Борисов»</h4>
+                  <p class="tile-news__text">График постоянного присутствия работников государственных органов и иных организаций</p><a class="tile-news__link" href="#">Подробнее </a>
+                </div>
+              </li>
+            </ul><a class="btn btn-primary btn-sm news__btn" href="#" data-aos="zoom-in">Показать еще </a>
+          </div>
         </div>
       </div>
       <footer class="footer">
