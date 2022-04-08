@@ -32,6 +32,16 @@ accounBtn.onclick = function (evt) {
     document.querySelector('.account__btn').classList.toggle('account__btn--rotate');
 }
 
+//select-sm
+const selects = document.querySelectorAll('.select');
+
+for (const select of selects) {
+    var config = {
+        create: false,
+    };
+    new TomSelect(select,config);
+}
+
 
 //aos
 AOS.init({
@@ -92,3 +102,19 @@ for (const modalClose of modalsClose) {
         }
     });
 }
+
+//filter btn
+var filterBtn = document.querySelector(".filter-btn");
+var filter = document.querySelector(".filter-container");
+
+filterBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    this.classList.toggle("is-active");
+
+    if (filter.style.maxHeight){
+        filter.style.maxHeight = null;
+    } else {
+        filter.style.maxHeight = filter.scrollHeight + "px";
+    } 
+});

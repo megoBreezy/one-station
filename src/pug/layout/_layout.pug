@@ -7,8 +7,9 @@ html(lang="ru")
 			meta(content="width=device-width, initial-scale=1" name="viewport")
 			meta(content="ie=edge" http-equiv="x-ua-compatible")
 			link(rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon") 
-			link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet")
+			link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet")
 			link(rel="stylesheet" href="css/aos.css")
+			link(rel="stylesheet" href="css/tom-select.css")
 			link(rel="stylesheet" href="css/main.css")
 	body
 		#overlay
@@ -16,6 +17,8 @@ html(lang="ru")
 			.content
 				block content
 			block footer
+		script(src='js/calendar.js')
 		script(src='js/aos.js')
+		script(src='js/tom-select.complete.min.js')
 		script(src='js/app.js')
 		block scripts

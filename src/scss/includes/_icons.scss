@@ -38,16 +38,6 @@
     height: 26px;
   }
 
-  &--angle-left {
-    width: 9px;
-    height: 15px;
-  }
-
-  &--angle-right {
-    width: 9px;
-    height: 15px;
-  }
-
   &--arrow-right-more {
     width: 22px;
     height: 22px;
@@ -136,5 +126,15 @@
   &--cross {
     width: 24px;
     height: 24px;
+  }
+
+  &--filter {
+    width: 28px;
+    height: 29px;
+  }
+
+  &--angle-left, &--angle-right {
+    width: 7px;
+    height: 12px;
   }
 }

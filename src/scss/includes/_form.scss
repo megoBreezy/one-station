@@ -93,6 +93,203 @@
     }
 }
 
+.select-sm {
+    margin: 0 7.5px;
+    min-width: 95px;
+    margin-bottom: 15px;
+
+    &.ts-wrapper.single .ts-control:after {
+        border-color: #3C64B1 transparent transparent;
+        border-style: solid;
+        border-width: 5px 5px 0;
+        content: " ";
+        display: block;
+        height: 0;
+        margin-top: -2px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        width: 0;
+    }
+
+    &.ts-wrapper.single.dropdown-active .ts-control:after {
+        border-color: transparent transparent #3C64B1;
+        border-width: 0 5px 5px;
+        margin-top: -4px;
+    }
+
+    .ts-control {
+        border: 1px solid #3C64B1;
+        border-radius: 0;
+        background: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.3px;
+        color: #3C64B1;
+        padding: 0 18px;
+        height: 48px;
+        overflow: hidden;
+
+        .item {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 46px;
+        }
+    }
+
+    .ts-control > input {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: #3C64B1;
+        min-width: 1px!important;
+        flex: 1 1 100%!important;
+        margin: 0!important;
+        cursor: pointer!important;
+
+        &::placeholder {
+            color: #3C64B1;
+
+        }
+    }
+    .ts-control, &.ts-wrapper.single.input-active .ts-control {
+        cursor: pointer;
+        background: transparent;
+    }
+
+    &.input-active {
+
+        .ts-control > input {
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            color: #3C64B1;
+            min-width: 1px!important;
+            flex: 1 1 50px!important;
+            margin: 0!important;
+            cursor: pointer!important;
+            width: 0px!important;
+    
+            &::placeholder {
+                color: #3C64B1;
+    
+            }
+        }
+
+    }
+}
+.procedure {
+    width: 136px;
+
+    .ts-dropdown {
+        width: 500px;
+    }
+}
+
+.type {
+    width: 169px;
+}
+
+.status {
+    width: 130px;
+}
+.datepicker-cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 48px;
+    margin: 0 7.5px;
+    margin-bottom: 15px;
+
+    &__label {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 46px;
+        letter-spacing: 0.3px;
+        color: #3C64B1;
+        border: 1px solid #3C64B1;
+        width: 87px;
+        text-align: center;
+        margin-right: 15px;
+    }
+}
+.datepicker-input__cont {
+    margin-right: 15px;
+    position: relative;
+
+    &:after {
+        border-color: #fff transparent transparent;
+        border-style: solid;
+        border-width: 5px 5px 0;
+        content: " ";
+        display: block;
+        height: 0;
+        margin-top: -2px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        width: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+.datepicker-input {
+    border: 0;
+    background: #3C64B1;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 46px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    width: 115px;
+    padding-left: 18px;
+    outline: 0;
+
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+.btn-submit {
+    text-decoration: none;
+    outline: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    color: #fff;
+    line-height: 46px;
+    border: 1px solid #22A5DD;
+    background: #22A5DD;
+    margin-bottom: 15px;
+    padding: 0 24px;
+    transition: 0.3s all ease;
+
+    &:hover {
+        background: #fff;
+        color: #22A5DD;
+    }
+}
+
+#fc {
+    .icon {
+        color: #22A5DD;
+    }
+    .icon--angle-left {
+        margin-left: 4px;
+        margin-top: 4px;
+    }
+    .icon--angle-right {
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+}
+
 @media (max-width: 768px) {
     .form {
         &__label {
