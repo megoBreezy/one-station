@@ -23,7 +23,7 @@ document.addEventListener('click', function(e) {
     }
 });
 
-
+//
 let accounBtn = document.querySelector('.account__btn');
 
 accounBtn.onclick = function (evt) { 
@@ -37,3 +37,58 @@ accounBtn.onclick = function (evt) {
 AOS.init({
     duration: 1200,
 })
+
+//accordeon
+var accordeon = document.getElementsByClassName("accordeon__link");
+var i;
+
+for (i = 0; i < accordeon.length; i++) {
+    accordeon[i].addEventListener("click", function(e) {
+        e.preventDefault();
+
+        this.classList.toggle("is-active");
+
+        var panel = this.nextElementSibling;
+
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+}
+
+//modal
+const modalBtnItems = document.querySelectorAll('.modal-btn');
+const modals = document.querySelectorAll('.modal');
+const modalsClose = document.querySelectorAll('.modal__close');
+const overlay = document.getElementById('overlay');
+
+for (const modalBtn of modalBtnItems) {
+    modalBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        for (const modal of modals) {
+            modal.classList.remove('is-active');
+            overlay.classList.remove('is-active');
+            document.body.classList.remove('body-overflow');
+        }
+
+        const modalActive = document.getElementById(this.getAttribute('href')); 
+        modalActive.classList.add('is-active');
+        overlay.classList.add('is-active');
+        document.body.classList.add('body-overflow');
+    });
+}
+
+for (const modalClose of modalsClose) {
+    modalClose.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        for (const modal of modals) {
+            modal.classList.remove('is-active');
+            overlay.classList.remove('is-active');
+            document.body.classList.remove('body-overflow');
+        }
+    });
+}

@@ -1,0 +1,87 @@
+.page-wrapper.page-wrapper-sm
+    .wrapper-blue.title-blue   
+        .main-container
+            h1.title-blue__text
+                |Регистрация
+    .main-container 
+        .form 
+            .form__group
+                .form__row
+                    .form__col
+                        .form__label ФИО *
+                    .form__col
+                        .form-control 
+                            input(type="text").form-control__input 
+                .form__row
+                    .form__col
+                        .form__label email *
+                    .form__col
+                        .form-control 
+                            input(type="email" placeholder="domain@example.com").form-control__input.is-error
+                .form__row
+                    .form__col
+                        .form__label Рабочий телефон *
+                    .form__col
+                        .form-control 
+                            input(type="text" placeholder="+375(__)___+__+__").form-control__input 
+                .form__row
+                    .form__col
+                        .form__label Мобильный телефон *
+                    .form__col
+                        .form-control 
+                            input(type="text" placeholder="+375(__)___+__+__").form-control__input
+            .form__group
+                .form__row
+                    .form__col
+                        .form__label Название компании *
+                    .form__col
+                        .form-control 
+                            input(type="text").form-control__input 
+                .form__row
+                    .form__col
+                        .form__label УНП компании *
+                    .form__col
+                        .form-control 
+                            input(type="text").form-control__input 
+                .form__row
+                    .form__col
+                        .form__label Почтовый адрес компании *
+                    .form__col
+                        .form-control 
+                            input(type="text").form-control__input 
+            .form__group
+                .form__row
+                    .form__col
+                        .form__label Введите пароль
+                    .form__col
+                        .form-control 
+                            input(type="password").form-control__input 
+                            .form-control__info (Пароль должен содержать не менее 6 символов)
+                .form__row
+                    .form__col
+                        .form__label Подтвердите пароль
+                    .form__col
+                        .form-control 
+                            input(type="password").form-control__input 
+            .text-center
+                a(href="#").btn-gradient Зарегистироваться
+            .text-center
+                a(href="#").gray-link Отмена 
+#modal.login.modal 
+    a(href="#").modal__close
+        svg.icon.icon--cross
+            use(href="img/sprite.svg#cross")
+    h4.modal__header Войти
+    .modal__inner
+        .modal__logo-cont
+            a(href="#").modal__logo 
+                img(src="img/logo-dark-lg.svg", alt="")
+        .modal-form
+            .form-control 
+                input(type="text" placeholder="email").form-control__input 
+            .form-control 
+                input(type="password" placeholder="пароль").form-control__input 
+            a(href="#").btn-gradient Войти
+            .modal__bottom
+                a(href="#").gray-link Забыли пароль? 
+                a(href="#").gray-link Регистрация

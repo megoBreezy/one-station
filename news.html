@@ -14,7 +14,7 @@
     <div id="overlay"></div>
     <main id="main">
       <div class="content">
-        <header class="header">
+        <header class="header header-white">
           <div class="main-container">
             <div class="header__inner">
               <div class="side-bar">
@@ -37,9 +37,9 @@
                   </ul>
                 </div>
                 <div class="btn-menu side-bar__btn"><span></span><span></span><span>  </span></div><span class="side-bar__txte">ОДНА СТАНЦИЯ</span>
-              </div><a class="logo header__logo" href="#"><img class="logo__img" src="img/logo-white.svg" alt=""></a>
+              </div><a class="logo header__logo" href="#"><img class="logo__img" src="img/logo-dark-lg.svg" alt=""></a>
               <div class="header-list">
-                <div class="header-list__item"><a class="btn header-list__link" href="#">Реестр решений</a><a class="btn btn-primary btn-sm" href="#">Войти</a></div>
+                <div class="header-list__item"><a class="btn header-list__link" href="#">Реестр решений</a><a class="btn btn-primary btn-sm modal-btn" href="modal">Войти</a></div>
                 <ul class="header-list__item lang">
                   <li class="lang__item"><a class="lang__link" href="#">中文</a></li>
                   <li class="lang__item"><a class="lang__link" href="#">RU</a></li>
@@ -50,81 +50,9 @@
             </div>
           </div>
         </header>
-        <div class="welcome">
-          <div class="welcome__img-w"><img class="welcome__img" src="img/welcome.jpg" alt=""></div>
-          <div class="welcome__cont">
-            <div class="welcome__sub-titel" data-aos="fade-down" data-aos-delay="400">СИСТЕМА КОМПЛЕКСНОГО ОБСЛУЖИВАНИЯ</div>
-            <h1 class="welcome__titel" data-aos="fade-up">ОДНА СТАНЦИЯ</h1>
-            <ul class="welcome-list">
-              <li class="welcome-list__item">Безопасность</li>
-              <li class="welcome-list__item">Скорость</li>
-              <li class="welcome-list__item">Транспарентность</li>
-              <li class="welcome-list__item">Локализация</li>
-            </ul><a class="btn btn-secondary btn-lg" href="#" data-aos="fade-up" data-aos-delay="500">Подать заявку</a>
-          </div>
-        </div>
-        <div class="block-main">
-          <div class="about">
-            <div class="main-container">
-              <div class="partner-container">
-                <div class="partner" data-aos="fade-up"><a class="partner__logo" href="#"><img src="img/great-stone.png" alt=""></a><a class="bookmark" href="#">FAQ</a></div>
-                <div class="benefits">
-                  <div class="benefits__item" data-aos="fade-up" data-aos-delay="400"><svg class="icon icon--lg benefits__icon"><use href="img/sprite.svg#station"></use></svg>
-                    <div class="benefits__titel">Одна станция — </div>
-                    <p class="benefits__text">это система комплексного обслуживания ведения бизнеса в Китайско-Белорусском индустриальном парке «Великий камень».</p>
-                  </div>
-                  <div class="benefits__item" data-aos="fade-up" data-aos-delay="500"><svg class="icon icon--lg benefits__icon"><use href="img/sprite.svg#clock"></use></svg>
-                    <p class="benefits__text">Мы осуществляем административные и иные процедуры в максимально короткие сроки:</p>
-                    <ul class="triangle">
-                      <li>при личном обращении;</li>
-                      <li>через электронную систему onestation.by.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="request">
-            <div class="main-container">
-              <div class="request-step">
-                <div class="step" data-aos="fade-up">
-                  <div class="step__inner"><svg class="icon icon--arrow-step"><use href="img/sprite.svg#arrow-step"></use></svg>
-                    <div class="step__number">01</div>
-                    <h3 class="step__titel">РЕГИСТРАЦИЯ</h3>
-                    <ul class="triangle">
-                      <li>Введите все данные и подтвердите e-mail</li>
-                      <li>После проверки на ваш e-mail придет письмо о том, что аккаунт активирован</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="step" data-aos="fade-up" data-aos-delay="300">
-                  <div class="step__inner"><svg class="icon icon--arrow-step"><use href="img/sprite.svg#arrow-step"></use></svg>
-                    <div class="step__number">02</div>
-                    <h3 class="step__titel">СОЗДАНИЕ ЗАЯВКИ</h3>
-                    <ul class="triangle">
-                      <li>Выберите тип процедуры </li>
-                      <li>Если ни одна не подходит, выберите "Иная" и опишите свою проблему кратко в теме и развернуто в описании</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="step" data-aos="fade-up" data-aos-delay="600">
-                  <div class="step__inner">
-                    <div class="step__number">03</div>
-                    <ul class="triangle">
-                      <li>Прикрепите сканы необходимых документов</li>
-                      <li>Нажмите "Подать заявку"</li>
-                      <li>Обновления статуса заявки можно проверить в личном кабинете; сообщения о смене статуса будут также приходить на e-mail</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="request__btn"><a class="btn btn-primary btn-sm" href="#" data-aos="zoom-in">Подать заявку</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="news">
+        <div class="news page-wrapper">
           <div class="main-container">
-            <h2 class="main-title">НОВОСТИ</h2>
+            <h1 class="page-title">НОВОСТИ</h1>
             <div class="news-header" data-aos="fade-up">
               <div class="news-header__img"> <img src="img/news.jpg" alt=""></div>
               <div class="news-header__inner">
@@ -143,6 +71,63 @@
                 <div class="tile-news">
                   <h4 class="tile-news__title">Об обновлении расписания по маршруту №3410-ТК «Минск-Борисов»</h4>
                   <p class="tile-news__text">График постоянного присутствия работников государственных органов и иных организаций</p><a class="tile-news__link" href="#">Подробнее </a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">О временной приостановке маршрута №2357ТК «Минск  — Великий камень»</h4>
+                  <p class="tile-news__text">Администрация Китайско-Белорусского индустриального парка «Великий камень» сообщает ...</p><a class="tile-news__link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="600">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">О возобновлении маршрута № 2357ТК «ст.м. Уручье – Администр. центр»</h4>
+                  <p class="tile-news__text">Администрация парка информирует о возобновлении с 5 апреля 2021 года пригородного маршрута ...</p><a class="tile-news__link" href="#">Подробнее </a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">Об особенностях таможенного законодательства при работе ...</h4>
+                  <p class="tile-news__text">Об особенностях таможенного законодательства при работе с предприятиями с наивысшим уровнем доверия КНР (УЭО) </p><a class="tile-news__link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="600">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">О начислении амортизации в 2021 году</h4>
+                  <p class="tile-news__text">Продление срока действия на 2021 год постановления Совета Министров Республики Беларусь от 15.04.2020 ...</p>
+                </div>
+              </li>
+            </ul>
+            <div class="news-header" data-aos="fade-up">
+              <div class="news-header__img"> <img src="img/news-1.jpg" alt=""></div>
+              <div class="news-header__inner">
+                <p class="news-header__text">New</p>
+                <h3 class="news-header__title news-header__title-sm">Разъяснение Министерства по налогам и сборам РБ по ставке подоходного налога</h3><a class="news-header__link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <ul class="news-list">
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">О продлении срока действия некоторых справок, документов и решений</h4>
+                  <p class="tile-news__text">На основании Указа Президента Республики Беларусь от 25 ноября 2020г. «О продлении срока действия  ...</p><a class="tile-news__link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="600">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">Об изменении порядка и условий въезда на территорию РБ</h4>
+                  <p class="tile-news__text">Администрация парка информирует о временном изменении порядка пересечения Государственной ...</p><a class="tile-news__link" href="#">Подробнее </a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">О регистрации иностранных граждан и лиц без гражданства</h4>
+                  <p class="tile-news__text">Регистрация иностранного гражданина или лица без гражданства временно пребывающих в Республике  ...</p><a class="tile-news__link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="news-list__item" data-aos="fade-up" data-aos-delay="600">
+                <div class="tile-news">
+                  <h4 class="tile-news__title">Памятка работодателю по профилактике инфекции COVID-19</h4>
+                  <p class="tile-news__text">На территории Республики Беларусь все лица, прибывшие из зарубежных стран, подлежат  ...</p><a class="tile-news__link" href="#">Подробнее </a>
                 </div>
               </li>
             </ul><a class="btn btn-primary btn-sm news__btn" href="#" data-aos="zoom-in">Показать еще </a>

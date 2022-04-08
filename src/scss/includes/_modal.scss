@@ -1,0 +1,111 @@
+.login {
+    width: 500px;
+}
+.modal {
+    position: fixed;
+    max-width: 500px;
+    min-width: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+    z-index: 5100;
+
+    &.is-active {
+        transform: translate(-50%, -50%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #4F4F4F;
+        margin: 0;
+        padding: 10px 21px;
+        background: #F2F2F2;
+    }
+
+    &__inner {
+        padding: 30px 80px 60px;
+    }
+
+    &__logo {
+        text-decoration: none;
+        outline: 0;
+        display: inline-flex;
+    }
+
+    &__logo-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        .gray-link {
+            margin: 0 10px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        z-index: 5;
+        right: 15px;
+        top: 8px;
+        color: #3C64B1;
+        transform: rotate(45deg);
+        text-decoration: none;
+        outline: 0;
+
+        .icon {
+            color: #3C64B1;
+            transition: 0.3s all ease;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+.modal-form {
+    .form-control {
+        margin-bottom: 20px;
+    }
+    .btn-gradient {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 568px) {
+    .login {
+        width: 90%;
+    }
+    .modal__inner {
+        padding: 30px 34px 60px;
+    }
+}
+
+@media (max-width: 390px) {
+    .login {
+        width: 90%;
+    }
+    .modal__inner {
+        padding: 30px 22px 30px;
+    }
+}

@@ -1,5 +1,4 @@
 .btn {
-  display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +16,26 @@
   line-height: 18px;
   letter-spacing: 0.3px;
   color: #FFFFFF;
+}
+
+.btn-gradient {
+  text-decoration: none;
+  outline: 0;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  background: linear-gradient(138.87deg, #3C64B1 -15.75%, #052555 105.43%);
+  padding: 15px 24px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #052555;
+    background: #fff;
+    color: #052555;
+  }
 }
 
 .btn-primary {
@@ -46,6 +65,21 @@
 .btn-lg {
   min-width: 98px;
   padding: 13px 25px;
+}
+
+.gray-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  outline: 0;
+  transition: 0.3s all ease;
+
+  &:hover {
+    color: #3C64B1;
+  }
 }
 
 
