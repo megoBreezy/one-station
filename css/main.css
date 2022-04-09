@@ -1143,6 +1143,10 @@ body {
   .select-lg .ts-control .item {
     line-height: 38px;
   }
+
+  .select-lg.ts-wrapper.single .ts-control:after {
+    right: 8px;
+  }
 }
 @media (max-width: 400px) {
   .form__group {
