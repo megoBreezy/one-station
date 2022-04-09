@@ -1,0 +1,69 @@
+.page-wrapper.page-wrapper-sm
+    .wrapper-blue.title-blue   
+        .main-container
+            h1.title-blue__text
+                |Форма заявки
+    .main-container 
+        .form.form-request
+            .form__group
+                .form__row
+                    .form__col
+                        .form__label Тип процедуры
+                    .form__col
+                        select(name="").select-lg.select
+                            option(value='') Выберите тип процедуры
+                            option(value='1') тип 1
+                            option(value='2') тип 2
+                            option(value='3') тип 3
+                            option(value='4') тип 3
+                .form__row
+                    .form__col
+                        .form__label Тип процедуры
+                    .form__col
+                        select(name="").select-lg.select
+                            option(value='') Процедура
+                            option(value='1') тип 1
+                            option(value='2') тип 2
+                            option(value='3') тип 3
+                            option(value='4') тип 3
+                .form__row
+                    .form__col
+                        .form__label Тема *
+                    .form__col
+                        .form-control 
+                            input(type="email").form-control__input
+                .form__row
+                    .form__col
+                        .form__label Подробности о причинах создания завки *
+                    .form__col
+                        .form-control 
+                            textarea(name="", cols="30", rows="10").form-control__textarea
+                .form__row
+                    .form__col
+                        .form__label Орган:
+                    .form__col
+                        select(name="").select-lg.select
+                            option(value='') Выберите орган
+                            option(value='1') голова
+                            option(value='2') нога
+                            option(value='3') рука
+                .form__row
+                    .form__col
+                        .form__label Назначить:
+                    .form__col
+                        select(name="").select-lg.select
+                            option(value='') Выберите агента
+                            option(value='1') агент 1
+                            option(value='2') агент 2
+                            option(value='3') агент 007
+                .form__row
+                    .form__col
+                        .form__label Прикрепить файлы
+                    .form__col
+                        .form-file 
+                            input(type="file").form-file__input
+                            .form-file__label Перетащите файл в эту область
+            .form__bottom
+                a(href="#").btn-border Подписать ЭЦП
+                a(href="#").btn-gradient Зарегистироваться
+            

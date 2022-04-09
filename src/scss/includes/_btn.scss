@@ -30,11 +30,33 @@
   background: linear-gradient(138.87deg, #3C64B1 -15.75%, #052555 105.43%);
   padding: 15px 24px;
   border: 1px solid transparent;
+  transition: 0.3s all ease;
 
   &:hover {
     border: 1px solid #052555;
     background: #fff;
     color: #052555;
+  }
+}
+
+.btn-border {
+  text-decoration: none;
+  outline: 0;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  color: #4F4F4F;
+  background: #fff;
+  padding: 15px 24px;
+  border: 1px solid #BBB;
+  transition: 0.3s all ease;
+
+  &:hover {
+    border: 1px solid #052555;
+    background: #052555;
+    color: #fff;
   }
 }
 

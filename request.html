@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title your site</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/tom-select.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <div class="content">
+        <header class="header header-white">
+          <div class="main-container">
+            <div class="header__inner">
+              <div class="side-bar">
+                <div class="menu side-bar__menu">
+                  <div class="menu__logo"><a class="logo" href="#"><img class="logo__img" src="img/logo-dark.svg" alt=""></a></div>
+                  <div class="account account--active"><a class="account__btn" href="#"> 
+                      <div class="account__tytel">Иван Иванов</div></a>
+                    <ul class="account-list">
+                      <li class="account-list__item"><a class="account-list__link" href="#">Мой профиль</a></li>
+                      <li class="account-list__item"><a class="account-list__link" href="#">Личный кабинет</a></li>
+                      <li class="account-list__item">   <a class="account-list__link" href="#">Выйти <svg class="icon icon--lg account-list__icon"><use href="img/sprite.svg#exit"></use></svg></a></li>
+                    </ul>
+                  </div>
+                  <ul class="side-list menu__list"> 
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#statem"></use></svg> Подать заявку</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#faq"></use></svg> FAQ</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#news"></use></svg> Новости</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#contacts"></use></svg> Контакты</a></li>
+                    <li class="side-list__item"><a class="side-list__link" href="#"><svg class="icon icon--lg side-list__icon"><use href="img/sprite.svg#register"></use></svg> Реестр решений</a></li>
+                  </ul>
+                </div>
+                <div class="btn-menu side-bar__btn"><span></span><span></span><span>  </span></div><span class="side-bar__txte">ОДНА СТАНЦИЯ</span>
+              </div><a class="logo header__logo" href="#"><img class="logo__img" src="img/logo-dark-lg.svg" alt=""></a>
+              <div class="header-list">
+                <div class="header-list__item"><a class="btn header-list__link" href="#">Реестр решений</a><a class="btn btn-primary btn-sm modal-btn" href="modal">Войти</a></div>
+                <ul class="header-list__item lang">
+                  <li class="lang__item"><a class="lang__link" href="#">中文</a></li>
+                  <li class="lang__item"><a class="lang__link" href="#">RU</a></li>
+                  <li class="lang__item">   <a class="lang__link" href="#">EN</a></li>
+                  <li class="lang__item"><a class="lang__link" href="#">DE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="page-wrapper page-wrapper-sm">
+          <div class="wrapper-blue title-blue">  
+            <div class="main-container">
+              <h1 class="title-blue__text">Форма заявки</h1>
+            </div>
+          </div>
+          <div class="main-container"> 
+            <div class="form form-request">
+              <div class="form__group">
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__label">Тип процедуры</div>
+                  </div>
+                  <div class="form__col">
+                    <select class="select-lg select" name="">
+                      <option value="">Выберите тип процедуры</option>
+                      <option value="1">тип 1</option>
+                      <option value="2">тип 2</option>
+                      <option value="3">тип 3</option>
+                      <option value="4">тип 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__label">Тип процедуры</div>
+                  </div>
+                  <div class="form__col">
+                    <select class="select-lg select" name="">
+                      <option value="">Процедура</option>
+                      <option value="1">тип 1</option>
+                      <option value="2">тип 2</option>
+                      <option value="3">тип 3</option>
+                      <option value="4">тип 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__label">Тема *</div>
+                  </div>
+                  <div class="form__col">
+                    <div class="form-control"> 
+                      <input class="form-control__input" type="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__label">Подробности о причинах создания завки *</div>
+                  </div>
+                  <div class="form__col">
+                    <div class="form-control"> 
+                      <textarea class="form-control__textarea" name="" cols="30" rows="10"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__label">Орган:</div>
+                  </div>
+                  <div class="form__col">
+                    <select class="select-lg select" name="">
+                      <option value="">Выберите орган</option>
+                      <option value="1">голова</option>
+                      <option value="2">нога</option>
+                      <option value="3">рука</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__label">Назначить:</div>
+                  </div>
+                  <div class="form__col">
+                    <select class="select-lg select" name="">
+                      <option value="">Выберите агента</option>
+                      <option value="1">агент 1</option>
+                      <option value="2">агент 2</option>
+                      <option value="3">агент 007</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__label">Прикрепить файлы</div>
+                  </div>
+                  <div class="form__col">
+                    <div class="form-file"> 
+                      <input class="form-file__input" type="file">
+                      <div class="form-file__label">Перетащите файл в эту область</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__bottom"><a class="btn-border" href="#">Подписать ЭЦП</a><a class="btn-gradient" href="#">Зарегистироваться</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="main-container">
+          <div class="footer__inner"><a class="footer__logo" href="#"><img src="img/logo-lg.png" alt=""></a>
+            <div class="footer__contact"><a class="footer__link" href="tel:+375175172882">+375 (17) 517-28-82</a><a class="footer__link" href="mailto:one@greatstonepark.by">one@greatstonepark.by</a></div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/calendar.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/tom-select.complete.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
