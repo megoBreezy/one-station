@@ -104,17 +104,19 @@ for (const modalClose of modalsClose) {
 }
 
 //filter btn
-var filterBtn = document.querySelector(".filter-btn");
-var filter = document.querySelector(".filter-container");
+if(document.querySelector('.filter-btn')) {
+    var filterBtn = document.querySelector(".filter-btn");
+    var filter = document.querySelector(".filter-container");
 
-filterBtn.addEventListener("click", function(e) {
-    e.preventDefault();
+    filterBtn.addEventListener("click", function(e) {
+        e.preventDefault();
 
-    this.classList.toggle("is-active");
+        this.classList.toggle("is-active");
 
-    if (filter.style.maxHeight){
-        filter.style.maxHeight = null;
-    } else {
-        filter.style.maxHeight = filter.scrollHeight + "px";
-    } 
-});
+        if (filter.style.maxHeight){
+            filter.style.maxHeight = null;
+        } else {
+            filter.style.maxHeight = filter.scrollHeight + "px";
+        } 
+    });
+}

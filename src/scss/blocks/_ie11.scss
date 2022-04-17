@@ -1,0 +1,121 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .btn {
+        height: 42px;
+    }
+    .side-bar {
+        background: #234475;
+    }
+
+    .btn-menu {
+        margin-bottom: auto;
+    }
+
+    *::-ms-backdrop,
+        [data-aos^=fade][data-aos^=fade],[data-aos^=zoom][data-aos^=zoom]{
+        opacity: 1;
+        transform: translate3d(0px, 0, 0px);
+    }
+
+    .benefits__item {
+        max-width: 50%;
+    }
+
+    .step {
+        max-width: 33.333%;
+    }
+
+    .news-header__inner {
+        max-width: calc(100% - 400px);
+        overflow: hidden;
+    }
+
+    .news-header__img {
+        max-width: 400px;
+    }
+
+    .news-list__item {
+        max-width: 50%;
+
+        
+        &.news-list__full {
+            max-width: 100%;
+        }
+    }
+
+    .bookmark:after {
+        display: none;
+    }
+
+    .page-title {
+        background: transparent;
+        color: #052555;
+    }
+
+    @media (max-width: 1250px) {        
+        .header-white {
+            .side-bar {
+                background: transparent;
+            }
+
+        }
+        .side-bar {
+            background: transparent;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .partner {
+            min-height: 201px;
+        }
+
+        .benefits {
+            min-height: 135px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .request-step {
+            justify-content: center;
+        }
+
+        .step {
+            max-width: 380px;
+        }
+
+        .benefits {
+            min-height: 308px;
+        }
+
+        .benefits__item {
+            max-width: 100%;
+        }
+
+        .news-list__item {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .news-header__img {
+            max-width: 120px;
+        }
+
+        .news-header__inner {
+            max-width: calc(100% - 150px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .benefits {
+            min-height: 370px;
+            display: block;
+        }
+    }
+
+    @media (max-width: 568px) {
+        
+        .benefits__item {
+            min-height: 138px;
+        }
+    }
+}
