@@ -248,7 +248,22 @@
     
             }
         }
+    }
 
+    .ts-dropdown {
+        width: auto;
+        min-width: 100%;
+        margin: 0;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .ts-dropdown .option {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.40;
+        color: rgba(0, 0, 0, 0.5);
+        padding: 19px 23px;
+        border-bottom: 1px solid #BBBBBB;
     }
 }
 .procedure {
@@ -450,6 +465,13 @@
 
     }
 
+    .ts-dropdown {
+        border-radius: 0px 0px 5px 5px;
+        overflow: hidden;
+        margin: -5px 0 0 0;
+        border-top: 1px solid #BBBBBB;
+    }
+
     .ts-dropdown .option {
         font-weight: 400;
         font-size: 18px;
@@ -457,6 +479,13 @@
         color: rgba(0, 0, 0, 0.5);
         padding: 19px 23px;
         border-bottom: 1px solid #BBBBBB;
+    }
+}
+
+@media (max-width: 992px) {
+    .select-sm .ts-dropdown .option {
+        padding: 7px 15px;
+        font-size: 14px;
     }
 }
 

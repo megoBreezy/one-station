@@ -112,11 +112,6 @@ if(document.querySelector('.filter-btn')) {
         e.preventDefault();
 
         this.classList.toggle("is-active");
-
-        if (filter.style.maxHeight){
-            filter.style.maxHeight = null;
-        } else {
-            filter.style.maxHeight = filter.scrollHeight + "px";
-        } 
+        filter.classList.toggle("is-active");
     });
 }

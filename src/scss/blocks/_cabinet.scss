@@ -80,9 +80,12 @@
 }
 
 .filter-container {
-    max-height: 0;
-    overflow: hidden;
     transition: 0.3s all ease;
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
 }
 
 .filter-list {
@@ -428,6 +431,10 @@
 
     .filter-container {
         display: none;
+
+        &.is-active {
+            display: none;
+        }
     }
 
     .pagination {
