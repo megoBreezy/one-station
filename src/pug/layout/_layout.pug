@@ -11,6 +11,9 @@ html(lang="ru")
 			link(rel="stylesheet" href="css/aos.css")
 			link(rel="stylesheet" href="css/tom-select.css")
 			link(rel="stylesheet" href="css/main.css")
+
+			// for ie11
+			link(rel="stylesheet" href="css/select2.min.css")
 			link(rel="stylesheet" href="css/ie11.css")
 	body
 		#overlay
@@ -18,9 +21,19 @@ html(lang="ru")
 			.content
 				block content
 			block footer
+
+		//for all
 		script(src='js/calendar.js')
 		script(src='js/aos.js')
+		
+		//for other
 		script(src='js/tom-select.complete.min.js')
+		script(src='js/app.js')
+
+		// for ie11
 		script(src='js/svgxuse.min.js' defer)
+		script(src='js/jquery-3.6.0.min.js')
+		script(src='js/select2.min.js')
 		script(src='js/app-ie11.js')
+		
 		block scripts
