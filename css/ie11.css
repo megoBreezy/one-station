@@ -273,3 +273,18 @@
     min-height: 138px;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .procedure-drop {
+    width: 700px !important;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .type-drop {
+    width: 500px !important;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .status-drop {
+    width: 300px !important;
+  }
+}
