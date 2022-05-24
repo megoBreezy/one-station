@@ -1425,12 +1425,14 @@ body {
           transform: translateX(-100%);
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  pointer-events: none;
 }
 .menu--open {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  pointer-events: all;
 }
 .menu__logo {
   display: -webkit-box;

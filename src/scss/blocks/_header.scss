@@ -112,11 +112,13 @@
     opacity: 0;
     transform: translateX(-100%);
     transition: 0.3s all ease;
+    pointer-events: none;
 
     &--open{
         opacity: 1;
         visibility: visible;
         transform: translate(0,0);
+        pointer-events: all;
     }
 
     &__logo{
