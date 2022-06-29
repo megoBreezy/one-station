@@ -9,7 +9,23 @@
   }
 
   &__logo {
+    text-decoration: none;
+    outline: 0;
+    transition: 0.3s all ease;
+    display: flex;
+    align-items: center;
+  }
 
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .footer__logo {
+      &:last-child {
+        margin-left: 61px;
+      }
+    }
   }
 
   &__contact {
@@ -48,6 +64,13 @@
       margin-left: 0;
       flex: 0 1 360px;
     }
+
+    &__left {
+      width: 100%;
+
+      .footer__logo {
+        flex: 0 0 auto;
+      }
+    }
   }
-  
 }
