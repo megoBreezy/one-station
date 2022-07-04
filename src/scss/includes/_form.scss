@@ -20,6 +20,7 @@
 
     &__col {
         flex: 0 0 calc(100% - 248px);
+        min-width: 1px;
 
         &:first-child {
             flex: 0 0 248px;
@@ -412,8 +413,7 @@
         display: flex;
         align-items: center;
         letter-spacing: 0.3px;
-        padding: 0 24px;
-
+        padding: 0 36px 0 24px;
         color: rgba(0, 0, 0, 0.5);
 
         .item {
@@ -421,6 +421,7 @@
             overflow: hidden;
             white-space: nowrap;
             line-height: 62px;
+            max-width: calc(100% - 70px);
         }
     }
 
@@ -585,6 +586,7 @@
     }
     .select-lg .ts-control .item {
         line-height: 38px;
+        max-width: calc(100% - 50px);
     }
     .select-lg.ts-wrapper.single .ts-control:after {
         right: 8px;
