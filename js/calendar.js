@@ -89,7 +89,6 @@ var ccy=now.getFullYear();
 var updobj;
 
 function calendar(ielem) {
-    
     if(ielem) {
         ielem.select();
         lcs(ielem);
@@ -102,6 +101,14 @@ function lcs(ielem) {
 	getObj('fc').style.left=Left(ielem)+'px';
 	getObj('fc').style.top=Top(ielem)+ielem.offsetHeight+'px';
 	getObj('fc').style.display='';
+	
+	if(ielem.closest('.fancybox-wrap')) {
+		var parent = ielem.getBoundingClientRect();
+
+		getObj('fc').style.left=parent.left+window.pageXOffset+'px';
+		getObj('fc').style.top=parent.top+ielem.offsetHeight+window.pageYOffset+'px';
+		getObj('fc').style.zIndex=10000;
+	}
 
 	// First check date is valid
 	curdt=ielem.value;
@@ -252,3 +259,7 @@ function cdayf() {
 	    cfd=scfd;
 	}
 }
+
+window.addEventListener('scroll', function() {
+	checkClick();
+})
